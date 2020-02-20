@@ -89,6 +89,7 @@ p {
   width: 100% !important;
   height: 10vh !important;
   z-index: 100;
+  box-shadow: 0 5px 2px -2px grey;
 }
 
 #nav-collapse {

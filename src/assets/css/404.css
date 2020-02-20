@@ -1,0 +1,140 @@
+.all {
+    height: 100vh;
+    width: 100%;
+    background: url('../images/dark-vador.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.text {
+    transition: all 1s;
+}
+
+.title {
+    position: absolute;
+    font-size: 15vw;
+    color: black;
+    font-weight: bold;
+    left: 20%;
+    top: 20%;
+    transition: all 1s;
+    text-shadow: 0 0 5px black, 0 0 2px black, 0 0 10px black, 0 0 20px red, 0 0 30px red, 0 0 40px red, 0 0 55px red, 0 0 75px red, 2px 2px 2px rgba(206,0,0,0);
+}
+
+.under-title {
+    position: absolute;
+    font-size: 1.5vw;
+    color: white;
+    font-weight: bold;
+    left: 25%;
+    top: 58%;
+    transition: all 1s;
+    text-shadow: 0 0 5px #FFF, 0 0 2px #FFF, 0 0 10px #FFF, 0 0 20px red, 0 0 30px red, 0 0 40px red, 0 0 55px red, 0 0 75px red, 2px 2px 2px rgba(206,0,0,0);
+}
+
+.under-title-button {
+    position: absolute;
+    font-weight: bold;
+    left: 32%;
+    top: 68%;
+    transition: all 1s;
+    box-shadow: 0 0 5px #FFF, 0 0 2px #FFF, 0 0 10px #FFF, 0 0 20px red, 0 0 30px red, 0 0 40px red, 0 0 55px red, 0 0 75px red, 2px 2px 2px rgba(206,0,0,0);
+}
+
+#light {
+    margin-left: 15%;
+    margin-top:0;
+    box-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 8px #fff, 0 0 15px red, 0 0 35px red;
+    display: inline-block;
+    position: relative;
+    transform: rotate(-30deg);
+    width: 20px;
+    background: #fff;
+    height: 120%;
+    border-radius: 15px 15px 7px 7px;
+    z-index: 5;
+    animation: 1.5s ease-out 0s 1 lightSaber;
+    /* transform: translate(900px,2000px); */
+    /* transform: translateY(1000px); */
+
+}
+
+@keyframes lightSaber {
+  0% {
+    transform: translate(900px,2000px);
+  }
+  100% {
+    /* transform: translate(0px,0px); */
+  }
+}
+
+.light-off{
+    /* -webkit-transform: translate(350px,-350px); */
+    /* -o-transform: translate(350px,-350px); */
+    /* -moz-transform: translate(350px,-350px); */
+
+}
+
+/* Animations */
+
+@keyframes vader {
+	from { box-shadow: 0 0 10px #e51115; }
+	50% { box-shadow: 0 0 16px #e51115; }
+	to { box-shadow: 0 0 10px #e51115; }
+}
+@-moz-keyframes vader {
+	from { box-shadow: 0 0 10px #e51115; }
+	50% { box-shadow: 0 0 16px #e51115; }
+	to { box-shadow: 0 0 10px #e51115; }
+}
+@-webkit-keyframes vader {
+	from { box-shadow: 0 0 10px #e51115; }
+	50% { box-shadow: 0 0 16px #e51115; }
+	to { box-shadow: 0 0 10px #e51115; }
+}
+@-o-keyframes vader {
+	from { box-shadow: 0 0 10px #e51115; }
+	50% { box-shadow: 0 0 16px #e51115; }
+	to { box-shadow: 0 0 10px #e51115; }
+}
+@-ms-keyframes vader {
+	from { box-shadow: 0 0 10px #e51115; }
+	50% { box-shadow: 0 0 16px #e51115; }
+	to { box-shadow: 0 0 10px #e51115; }
+}
+
+@media (max-width: 1024px) {
+    .title {
+        position: static;
+        font-size: 30vw;
+        margin-left: 10%;
+        margin-top: 30%;
+        color: black;
+        font-weight: bold;
+        transition: all 1s;
+        text-shadow: 0 0 5px black, 0 0 2px black, 0 0 10px black, 0 0 20px red, 0 0 30px red, 0 0 40px red, 0 0 55px red, 0 0 75px red, 2px 2px 2px rgba(206,0,0,0);
+    }
+
+    .under-title {
+        position: static;
+        font-size: 7vw;
+        color: white;
+        margin-left: 10%;
+        margin-top: 10%;
+        font-weight: bold;
+        transition: all 1s;
+        text-shadow: 0 0 5px #FFF, 0 0 2px #FFF, 0 0 10px #FFF, 0 0 20px red, 0 0 30px red, 0 0 40px red, 0 0 55px red, 0 0 75px red, 2px 2px 2px rgba(206,0,0,0);
+    }
+
+    .under-title-button {
+        width: 200px !important;
+        position: static;
+        font-weight: bold;
+        margin-left: 10%;
+        margin-top: 10%;
+        transition: all 1s;
+        box-shadow: 0 0 5px #FFF, 0 0 2px #FFF, 0 0 10px #FFF, 0 0 20px red, 0 0 30px red, 0 0 40px red, 0 0 55px red, 0 0 75px red, 2px 2px 2px rgba(206,0,0,0);
+    }
+
+}
