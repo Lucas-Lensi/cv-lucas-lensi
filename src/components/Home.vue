@@ -57,14 +57,14 @@
             J'ai par ailleurs su développer une capacité de tavail d'équipe et notamment en utilisant et en comprenant le fonctionnement
             de logiciel comme github.
           </p>
-          <b-row class="my-5">
+          <b-row class="my-5 btns">
             <b-col md="4">
               <b-button href="#contact" class="p-3 btn-contact">ME CONTACTER</b-button>
             </b-col>
             <b-col>
-                <a href="../../public/CV-lucas-lensi.pdf" download>
-                    <b-button class="p-3 btn-pdf">TELECHARGER MON CV</b-button>
-                </a>
+              <a href="" download>
+                <b-button class="p-3 btn-pdf">TELECHARGER MON CV</b-button>
+              </a>
             </b-col>
           </b-row>
         </b-col>
@@ -84,96 +84,123 @@
       </b-row>
     </b-container>
     <b-container fluid id="skills" class="mt-5 py-4 background-dark">
-        <b-container>
-            <h1 class="part-title text-white text-center mt-5">COMPETENCES</h1>
-            <b-row class="mt-5">
-              <b-col md="6">
-                <b-row class="mb-5">
-                  <b-col sm="2" class="text-white text-center">
-                    HTML/CSS
-                  </b-col>
-                  <b-col sm="10" class="pt-2">
-                    <b-progress value="80" max="100" show-progress variant="danger" class="w-75 mx-auto" height="14px"></b-progress>
-                  </b-col>
-                </b-row>
-                <b-row class="mb-5">
-                  <b-col sm="2" class="text-white text-center">
-                    Javascrypt
-                  </b-col>
-                  <b-col sm="10" class="pt-2">
-                    <b-progress value="60" max="100" show-progress variant="danger" class="w-75 mx-auto" height="14px"></b-progress>
-                  </b-col>
-                </b-row>
-                <b-row class="mb-5">
-                  <b-col sm="2" class="text-white text-center">
-                    Ruby on rails
-                  </b-col>
-                  <b-col sm="10" class="pt-2">
-                    <b-progress value="85" max="100" show-progress variant="danger" class="w-75 mx-auto" height="14px"></b-progress>
-                  </b-col>
-                </b-row>
-              </b-col>
-              <b-col md="6">
-                <b-row class="mb-5">
-                  <b-col sm="2" class="text-white text-center">
-                    Node.js
-                  </b-col>
-                  <b-col sm="10" class="pt-2">
-                    <b-progress value="40" max="100" show-progress variant="danger" class="w-75 mx-auto" height="14px"></b-progress>
-                  </b-col>
-                </b-row>
-                <b-row class="mb-5">
-                  <b-col sm="2" class="text-white text-center">
-                    Vue.js
-                  </b-col>
-                  <b-col sm="10" class="pt-2">
-                    <b-progress value="50" max="100" show-progress variant="danger" class="w-75 mx-auto" height="14px"></b-progress>
-                  </b-col>
-                </b-row>
-                <b-row class="mb-5">
-                  <b-col sm="2" class="text-white text-center">
-                    Github
-                  </b-col>
-                  <b-col sm="10" class="pt-2">
-                    <b-progress value="80" max="100" show-progress variant="danger" class="w-75 mx-auto" height="14px"></b-progress>
-                  </b-col>
-                </b-row>
-              </b-col>
-            </b-row>
-            <h3 class="underpart-title text-white text-center my-5">COMPETENCES SECONDAIRES</h3>
+      <b-container>
+        <h1 class="part-title text-white text-center mt-5">COMPETENCES</h1>
+        <b-row class="mt-5">
+          <b-col md="6">
             <b-row class="mb-5">
-              <b-col>
-                <radial-progress-bar :diameter="150" :completed-steps="85" :total-steps="100" start-color="red" stop-color="red" class="mx-auto mb-3">
-                  <h4 class="text-white">85 %</h4>
-                </radial-progress-bar>
-                <h5 class="text-white text-center">Bootstrap</h5>
+              <b-col sm="2" class="text-white text-center">
+                <p id="popover-html" style="color: white">HTML/CSS</p>
+                <b-popover target="popover-html" triggers="hover" placement="left">
+                  <img :src="require('../assets/images/logo/html-css.png')" alt="" style="width: 80px !important;">
+                </b-popover>
               </b-col>
-              <b-col>
-                <radial-progress-bar :diameter="150" :completed-steps="50" :total-steps="100" start-color="red" stop-color="red" class="mx-auto mb-3">
-                  <h4 class="text-white">50 %</h4>
-                </radial-progress-bar>
-                <h5 class="text-white text-center">Linux</h5>
-              </b-col>
-              <b-col>
-                <radial-progress-bar :diameter="150" :completed-steps="65" :total-steps="100" start-color="red" stop-color="red" class="mx-auto mb-3">
-                  <h4 class="text-white">65 %</h4>
-                </radial-progress-bar>
-                <h5 class="text-white text-center">SQL / MongoDB</h5>
-              </b-col>
-              <b-col>
-                <radial-progress-bar :diameter="150" :completed-steps="95" :total-steps="100" start-color="red" stop-color="red" class="mx-auto mb-3">
-                  <h4 class="text-white">95 %</h4>
-                </radial-progress-bar>
-                <h5 class="text-white text-center">Travail d'équipe</h5>
-              </b-col>
-              <b-col>
-                <radial-progress-bar :diameter="150" :completed-steps="100" :total-steps="100" start-color="red" stop-color="red" class="mx-auto mb-3">
-                  <h4 class="text-white">200 %</h4>
-                </radial-progress-bar>
-                <h5 class="text-white text-center">Motivation</h5>
+              <b-col sm="10" class="pt-2">
+                <b-progress value="80" max="100" show-progress variant="danger" class="w-75 mx-auto" height="14px"></b-progress>
               </b-col>
             </b-row>
-        </b-container>
+            <b-row class="mb-5">
+              <b-col sm="2" class="text-white text-center">
+                <p id="popover-js" style="color: white">JavaScript</p>
+                <b-popover target="popover-js" triggers="hover" placement="left">
+                  <img :src="require('../assets/images/logo/js.png')" alt="" style="width: 80px !important;">
+                </b-popover>
+              </b-col>
+              <b-col sm="10" class="pt-2">
+                <b-progress value="60" max="100" show-progress variant="danger" class="w-75 mx-auto" height="14px"></b-progress>
+              </b-col>
+            </b-row>
+            <b-row class="mb-5">
+              <b-col sm="2" class="text-white text-center">
+                <p id="popover-ruby" style="color: white">Ruby On Rails</p>
+                <b-popover target="popover-ruby" triggers="hover" placement="left">
+                  <img :src="require('../assets/images/logo/rails.jpg')" alt="" style="width: 80px !important;">
+                </b-popover>
+              </b-col>
+              <b-col sm="10" class="pt-2">
+                <b-progress value="85" max="100" show-progress variant="danger" class="w-75 mx-auto" height="14px"></b-progress>
+              </b-col>
+            </b-row>
+          </b-col>
+          <b-col md="6">
+            <b-row class="mb-5">
+              <b-col sm="2" class="text-white text-center">
+                <p id="popover-node" style="color: white">Node.js</p>
+                <b-popover target="popover-node" triggers="hover" placement="left">
+                  <img :src="require('../assets/images/logo/node.png')" alt="" style="width: 80px !important;">
+                </b-popover>
+              </b-col>
+              <b-col sm="10" class="pt-2">
+                <b-progress value="40" max="100" show-progress variant="danger" class="w-75 mx-auto" height="14px"></b-progress>
+              </b-col>
+            </b-row>
+            <b-row class="mb-5">
+              <b-col sm="2" class="text-white text-center">
+                <p id="popover-vue" style="color: white">Vue.js</p>
+                <b-popover target="popover-vue" triggers="hover" placement="left">
+                  <img :src="require('../assets/images/logo/vue.png')" alt="" style="width: 80px !important;">
+                </b-popover>
+              </b-col>
+              <b-col sm="10" class="pt-2">
+                <b-progress value="50" max="100" show-progress variant="danger" class="w-75 mx-auto" height="14px"></b-progress>
+              </b-col>
+            </b-row>
+            <b-row class="mb-5">
+              <b-col sm="2" class="text-white text-center">
+                <b-popover target="popover-git" triggers="hover" placement="left">
+                  <img :src="require('../assets/images/logo/git.png')" alt="" style="width: 80px !important;">
+                </b-popover>
+                <p id="popover-git" style="color: white">GitHub</p>
+              </b-col>
+              <b-col sm="10" class="pt-2">
+                <b-progress value="80" max="100" show-progress variant="danger" class="w-75 mx-auto" height="14px"></b-progress>
+              </b-col>
+            </b-row>
+          </b-col>
+        </b-row>
+        <h3 class="underpart-title text-white text-center my-5">COMPETENCES SECONDAIRES</h3>
+        <b-row class="mb-5">
+          <b-col>
+            <radial-progress-bar :diameter="150" :completed-steps="85" :total-steps="100" start-color="red" stop-color="red" class="mx-auto mb-3">
+              <h4 class="text-white">85 %</h4>
+            </radial-progress-bar>
+            <h5 id="popover-bootstrap" class="text-white text-center">Bootstrap</h5>
+            <b-popover target="popover-bootstrap" triggers="hover" placement="bottom">
+              <img :src="require('../assets/images/logo/bootstrap.png')" alt="" style="width: 80px !important;">
+            </b-popover>
+          </b-col>
+          <b-col>
+            <radial-progress-bar :diameter="150" :completed-steps="50" :total-steps="100" start-color="red" stop-color="red" class="mx-auto mb-3">
+              <h4 class="text-white">50 %</h4>
+            </radial-progress-bar>
+            <h5 id="popover-linux" class="text-white text-center">Linux</h5>
+            <b-popover target="popover-linux" triggers="hover" placement="bottom">
+              <img :src="require('../assets/images/logo/linux.png')" alt="" style="width: 80px !important;">
+            </b-popover>
+          </b-col>
+          <b-col>
+            <radial-progress-bar :diameter="150" :completed-steps="65" :total-steps="100" start-color="red" stop-color="red" class="mx-auto mb-3">
+              <h4 class="text-white">65 %</h4>
+            </radial-progress-bar>
+            <h5 id="popover-db" class="text-white text-center">SQL / MongoDB</h5>
+            <b-popover target="popover-db" triggers="hover" placement="bottom">
+              <img :src="require('../assets/images/logo/git.png')" alt="" style="width: 80px !important;">
+            </b-popover>
+          </b-col>
+          <b-col>
+            <radial-progress-bar :diameter="150" :completed-steps="95" :total-steps="100" start-color="red" stop-color="red" class="mx-auto mb-3">
+              <h4 class="text-white">95 %</h4>
+            </radial-progress-bar>
+            <h5 class="text-white text-center">Travail d'équipe</h5>
+          </b-col>
+          <b-col>
+            <radial-progress-bar :diameter="150" :completed-steps="100" :total-steps="100" start-color="red" stop-color="red" class="mx-auto mb-3">
+              <h4 class="text-white">200 %</h4>
+            </radial-progress-bar>
+            <h5 class="text-white text-center">Motivation</h5>
+          </b-col>
+        </b-row>
+      </b-container>
     </b-container>
     <b-container fluid id="course" class="mt-4 py-4">
       <h1 class="part-title text-center mt-5">PARCOURS</h1>
@@ -193,9 +220,9 @@
             <span>Licence INFORMATION - COMMUNICATION</span>
             <p>Université Lumière Lyon 2</p>
             <p> Mise en place de Projet de communication<br>
-                Creation de de visuels à l'aide de divers outils de PAO<br>
-                Développement du travail d'équipe<br>
-                Initiation HTML/CSS
+              Creation de de visuels à l'aide de divers outils de PAO<br>
+              Développement du travail d'équipe<br>
+              Initiation HTML/CSS
             </p>
           </div>
         </div>
@@ -206,10 +233,10 @@
             <span>The Hacking Project</span>
             <p>Formation de 3 mois intensifs développeur Web Full-Stack</p>
             <p>
-                Technologies de base Front-End : <B>HTML/CSS/JS</B><br>
-                Framework Front-End : <B>Bootstrap</B><br>
-                Apprentissage avancé de <B>Ruby</B> et <B>Ruby on Rails</B><br>
-                Réalisation de projets de groupe
+              Technologies de base Front-End : <B>HTML/CSS/JS</B><br>
+              Framework Front-End : <B>Bootstrap</B><br>
+              Apprentissage avancé de <B>Ruby</B> et <B>Ruby on Rails</B><br>
+              Réalisation de projets de groupe
             </p>
           </div>
         </div>
@@ -219,8 +246,8 @@
             <h3>2020</h3>
             <span>Plant'açao</span>
             <p>.Réalisation d'une application web pour une assciation à but non lucratif<br>
-                Front-End : <B>Vue.js</B> et BootstrapVue<br>
-                Back-End : <B>Node.js</B>, <B>MongoDB</B>, <B>AWS S3</B>
+              Front-End : <B>Vue.js</B> et BootstrapVue<br>
+              Back-End : <B>Node.js</B>, <B>MongoDB</B>, <B>AWS S3</B>
             </p>
           </div>
         </div>
@@ -249,18 +276,20 @@
         </b-col>
       </b-row>
       <!-- <GmapMap :center="{lat:10, lng:10}" :zoom="7" class="gmap mx-auto mb-5" :options="{ zoomControl: true, mapTypeControl: false, scaleControl: false, streetViewControl: true, rotateControl: false, fullscreenControl: false, disableDefaultUi: false }" >
-        <GmapMarker :key="index" v-for="(m, index) in markers" :position="m.position" :clickable="true" :draggable="true" @click="center=m.position"/>
-      </GmapMap> -->
-      <div class="mx-auto">
-          <iframe class="mx-auto" width="700" height="400" src="https://maps.google.com/maps?width=700&amp;height=400&amp;hl=en&amp;q=Lyon+(Titre)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-          </iframe>
+      <GmapMarker :key="index" v-for="(m, index) in markers" :position="m.position" :clickable="true" :draggable="true" @click="center=m.position"/>
+    </GmapMap> -->
+    <center>
+      <div>
+        <iframe class="mx-auto gmap" src="https://maps.google.com/maps?width=700&amp;height=400&amp;hl=en&amp;q=Lyon+(Titre)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no">
+        </iframe>
       </div><br />
-    </b-container>
-    <b-container id="footer">
-      <p class="text-center pt-4 mt-2">CV réalisé en Vue.js à l'aide de Bootstrap Vue</p>
-      <p class="text-center pb-4 mb-2">© Copyright 2020 Lucas LENSI. Tous droits réservés</p>
-    </b-container>
-  </div>
+    </center>
+  </b-container>
+  <b-container id="footer">
+    <p class="text-center pt-4 mt-2">CV réalisé en Vue.js à l'aide de Bootstrap Vue</p>
+    <p class="text-center pb-4 mb-2">© Copyright 2020 Lucas LENSI. Tous droits réservés</p>
+  </b-container>
+</div>
 </template>
 
 <script>
@@ -279,8 +308,6 @@ export default {
     BIconPhone,
     BIconEnvelope
   },
-  mounted () {
-  },
   methods: {
     handleScroll (event) {
       const nav = document.getElementById('navbar')
@@ -295,6 +322,8 @@ export default {
         header.classList.remove('header')
       }
     }
+  },
+  async mounted () {
   },
   created () {
     window.addEventListener('scroll', this.handleScroll)
