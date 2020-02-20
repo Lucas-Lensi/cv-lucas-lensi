@@ -271,8 +271,6 @@ export default {
   name: 'home',
   data () {
     return {
-      completedSteps: 5,
-      totalSteps: 10
     }
   },
   components: {
