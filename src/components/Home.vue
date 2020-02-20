@@ -6,7 +6,7 @@
           <div class="container">
             <h1 class="hero-name">Lucas Lensi</h1>
             <h3 class="hero-anim">Developpeur
-              <vue-typer :text='["Front-End","Back-End","Motivé"]' :repeat='infinity' :shuffle='false' initial-action='typing' :pre-type-delay='500' :type-delay='70' :pre-erase-delay='900' :erase-delay='100' erase-style='backspace' :erase-on-complete='false' caret-animation='phase' ></vue-typer>
+              <vue-typer :text='["Front-End","Back-End","Motivé"]' :shuffle='false' initial-action='typing' :pre-type-delay='500' :type-delay='70' :pre-erase-delay='900' :erase-delay='100' erase-style='backspace' :erase-on-complete='false' caret-animation='phase' ></vue-typer>
             </h3>
           </div>
         </b-col>
@@ -62,9 +62,9 @@
               <b-button href="#contact" class="p-3 btn-contact">ME CONTACTER</b-button>
             </b-col>
             <b-col>
-                <a href="./../assets/files/CV-lucas-lensi.pdf" download>
-              <b-button class="p-3 btn-pdf">TELECHARGER MON CV</b-button>
-          </a>
+                <a href="../../public/CV-lucas-lensi.pdf" download>
+                    <b-button class="p-3 btn-pdf">TELECHARGER MON CV</b-button>
+                </a>
             </b-col>
           </b-row>
         </b-col>
@@ -143,31 +143,31 @@
             <h3 class="underpart-title text-white text-center my-5">COMPETENCES SECONDAIRES</h3>
             <b-row class="mb-5">
               <b-col>
-                <radial-progress-bar :diameter="150" completed-steps="85" total-steps="100" start-color="red" stop-color="red" class="mx-auto mb-3">
+                <radial-progress-bar :diameter="150" :completed-steps="85" :total-steps="100" start-color="red" stop-color="red" class="mx-auto mb-3">
                   <h4 class="text-white">85 %</h4>
                 </radial-progress-bar>
                 <h5 class="text-white text-center">Bootstrap</h5>
               </b-col>
               <b-col>
-                <radial-progress-bar :diameter="150" completed-steps="50" total-steps="100" start-color="red" stop-color="red" class="mx-auto mb-3">
+                <radial-progress-bar :diameter="150" :completed-steps="50" :total-steps="100" start-color="red" stop-color="red" class="mx-auto mb-3">
                   <h4 class="text-white">50 %</h4>
                 </radial-progress-bar>
                 <h5 class="text-white text-center">Linux</h5>
               </b-col>
               <b-col>
-                <radial-progress-bar :diameter="150" completed-steps="65" total-steps="100" start-color="red" stop-color="red" class="mx-auto mb-3">
+                <radial-progress-bar :diameter="150" :completed-steps="65" :total-steps="100" start-color="red" stop-color="red" class="mx-auto mb-3">
                   <h4 class="text-white">65 %</h4>
                 </radial-progress-bar>
                 <h5 class="text-white text-center">SQL / MongoDB</h5>
               </b-col>
               <b-col>
-                <radial-progress-bar :diameter="150" completed-steps="95" total-steps="100" start-color="red" stop-color="red" class="mx-auto mb-3">
+                <radial-progress-bar :diameter="150" :completed-steps="95" :total-steps="100" start-color="red" stop-color="red" class="mx-auto mb-3">
                   <h4 class="text-white">95 %</h4>
                 </radial-progress-bar>
                 <h5 class="text-white text-center">Travail d'équipe</h5>
               </b-col>
               <b-col>
-                <radial-progress-bar :diameter="150" completed-steps="100" total-steps="100" start-color="red" stop-color="red" class="mx-auto mb-3">
+                <radial-progress-bar :diameter="150" :completed-steps="100" :total-steps="100" start-color="red" stop-color="red" class="mx-auto mb-3">
                   <h4 class="text-white">200 %</h4>
                 </radial-progress-bar>
                 <h5 class="text-white text-center">Motivation</h5>
@@ -248,9 +248,13 @@
           </p>
         </b-col>
       </b-row>
-      <GmapMap :center="{lat:10, lng:10}" :zoom="7" class="gmap mx-auto mb-5" :options="{ zoomControl: true, mapTypeControl: false, scaleControl: false, streetViewControl: true, rotateControl: false, fullscreenControl: false, disableDefaultUi: false }" >
+      <!-- <GmapMap :center="{lat:10, lng:10}" :zoom="7" class="gmap mx-auto mb-5" :options="{ zoomControl: true, mapTypeControl: false, scaleControl: false, streetViewControl: true, rotateControl: false, fullscreenControl: false, disableDefaultUi: false }" >
         <GmapMarker :key="index" v-for="(m, index) in markers" :position="m.position" :clickable="true" :draggable="true" @click="center=m.position"/>
-      </GmapMap>
+      </GmapMap> -->
+      <div class="mx-auto">
+          <iframe class="mx-auto" width="700" height="400" src="https://maps.google.com/maps?width=700&amp;height=400&amp;hl=en&amp;q=Lyon+(Titre)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+          </iframe>
+      </div><br />
     </b-container>
     <b-container id="footer">
       <p class="text-center pt-4 mt-2">CV réalisé en Vue.js à l'aide de Bootstrap Vue</p>
