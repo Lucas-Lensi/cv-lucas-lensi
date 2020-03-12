@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-jumbotron id="homeHero" class="mb-0">
+    <b-jumbotron id="homeHero" class="mb-0 to-middle">
       <b-row>
         <b-col col-md="6" class="text-center hero-text">
           <div class="container">
@@ -14,32 +14,33 @@
     </b-jumbotron>
     <div>
       <div id="header"></div>
-      <b-navbar id="navbar" class="nav" toggleable="lg" type="light" variant="light">
+      <b-navbar id="navbar" class="nav" toggleable="lg">
         <b-navbar-toggle target="nav-collapse" class="nav-toggle"></b-navbar-toggle>
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav class="">
-            <b-nav-item href="#about" class="nav-text-left">Profile</b-nav-item>
-            <b-nav-item href="#skills" class="nav-text-left">Compétences</b-nav-item>
+            <b-nav-item href="#about" class="nav-text nav-text-left">Profile</b-nav-item>
+            <b-nav-item href="#skills" class="nav-text nav-text-left">Compétences</b-nav-item>
           </b-navbar-nav>
           <b-navbar-nav class="ml-auto">
-            <b-nav-item href="#homeHero" class="mx-auto">
-              <img class="round-img-nav" src="../assets/images/profile-square.jpg">
+            <b-nav-item href="#homeHero" class="mx-auto nav-text">
+              <!-- <img class="round-img-nav" src="../assets/images/profile-square.jpg"> -->
+              Lucas Lensi
             </b-nav-item>
           </b-navbar-nav>
           <b-navbar-nav class="ml-auto">
-            <b-nav-item href="#course" class="nav-text-right">Parcours</b-nav-item>
-            <b-nav-item href="#contact" class="nav-text-right">Contact</b-nav-item>
+            <b-nav-item href="#course" class="nav-text nav-text-right">Parcours</b-nav-item>
+            <b-nav-item href="#contact" class="nav-text nav-text-right">Contact</b-nav-item>
           </b-navbar-nav>
         </b-collapse>
       </b-navbar>
     </div>
-    <b-container fluid id="profile" class="profile-img">
+    <!-- <b-container fluid id="profile" class="profile-img">
       <b-row>
         <b-col offset-md="4" md="4" class="margin">
           <img class="profile round-img border" src="../assets/images/profile-square.jpg">
         </b-col>
       </b-row>
-    </b-container>
+    </b-container> -->
     <b-container id="about" class="mt-5 py-4">
       <h1 class="part-title text-center mt-5">A PROPOS DE MOI</h1>
       <b-row class="mt-5">
@@ -205,24 +206,14 @@
     <b-container fluid id="course" class="mt-4 py-4">
       <h1 class="part-title text-center mt-5">PARCOURS</h1>
       <div class="zouk">
-        <div class="timeline-block timeline-block-right">
-          <div class="marker"></div>
-          <div class="timeline-content border p-4">
-            <h3>2014-2015</h3>
-            <span>Baccalauréat ECONOMIQUE et SOCIAL</span>
-            <p>Spécialité Mathématiques</p>
-          </div>
-        </div>
         <div class="timeline-block timeline-block-left">
           <div class="marker"></div>
           <div class="timeline-content border p-4">
-            <h3>2015-2018</h3>
-            <span>Licence INFORMATION - COMMUNICATION</span>
-            <p>Université Lumière Lyon 2</p>
-            <p> Mise en place de Projet de communication<br>
-              Creation de de visuels à l'aide de divers outils de PAO<br>
-              Développement du travail d'équipe<br>
-              Initiation HTML/CSS
+            <h3>2020</h3>
+            <span>Plant'açao</span>
+            <p>.Réalisation d'une application web pour une assciation à but non lucratif<br>
+              Front-End : <B>Vue.js</B> et BootstrapVue<br>
+              Back-End : <B>Node.js</B>, <B>MongoDB</B>, <B>AWS S3</B>
             </p>
           </div>
         </div>
@@ -243,12 +234,22 @@
         <div class="timeline-block timeline-block-left">
           <div class="marker"></div>
           <div class="timeline-content border p-4">
-            <h3>2020</h3>
-            <span>Plant'açao</span>
-            <p>.Réalisation d'une application web pour une assciation à but non lucratif<br>
-              Front-End : <B>Vue.js</B> et BootstrapVue<br>
-              Back-End : <B>Node.js</B>, <B>MongoDB</B>, <B>AWS S3</B>
+            <h3>2015-2018</h3>
+            <span>Licence INFORMATION - COMMUNICATION</span>
+            <p>Université Lumière Lyon 2</p>
+            <p> Mise en place de Projet de communication<br>
+              Creation de de visuels à l'aide de divers outils de PAO<br>
+              Développement du travail d'équipe<br>
+              Initiation HTML/CSS
             </p>
+          </div>
+        </div>
+        <div class="timeline-block timeline-block-right">
+          <div class="marker"></div>
+          <div class="timeline-content border p-4">
+            <h3>2014-2015</h3>
+            <span>Baccalauréat ECONOMIQUE et SOCIAL</span>
+            <p>Spécialité Mathématiques</p>
           </div>
         </div>
       </div>

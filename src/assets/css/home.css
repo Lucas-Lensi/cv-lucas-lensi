@@ -57,6 +57,12 @@ p {
     width: 100%;
 }
 
+.to-middle {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
 
 /* END HERO */
 
@@ -70,17 +76,19 @@ p {
   box-shadow: 0 5px 2px -2px grey;
   transition: all .4s linear;
   width: 100%;
+  background-color: white !important;
+}
+
+.nav-text {
+    font-size: 1.3rem !important;
+    font-weight: bold;
 }
 
 .nav-text-left {
-  font-size: 1.3rem !important;
-  font-weight: bold;
   margin-left: 3rem !important;
 }
 
 .nav-text-right {
-  font-size: 1.3rem !important;
-  font-weight: bold;
   margin-right: 3rem !important;
 }
 
