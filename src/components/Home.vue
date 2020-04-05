@@ -48,25 +48,30 @@
           <h3 class="underpart-title mb-3">OBJECTIFS</h3>
           <p>
             Intéressé par l'informatique depuis mon plus jeune âge, j'ai pris la décision de faire de cette passion mon métier.
-            Ma réussite professionnel étant mon objectif premier, je souhaite acquerir des compétences dans diverses technologie Web
-            afin de pouvoir répondre aux attentes des commanditeurs tout en ayant la capacité d'évoluer parallèlement aux technologies.
+            J'ai pour ambition, à cours terme, d'élargir mes compétences dans diverses technologies web. Ceci ayant
+            pour but de développer ma capacité d'adapation afin de savoir répondre à toutes les problématiques.
+            A terme, je me spécialiserais dans un ensemble de technologies afin d'ouvrir mon auto-entreprise et ainsi développer
+            une expertise dans ces langages.
           </p>
           <h3 class="underpart-title mt-5 mb-3">SAVOIR FAIRE</h3>
           <p>
-            Tout au long de mon cursus, j'ai non seulement développer un panel de comopétences dans le domaine du développement web,
-            mais j'ai aussi appris à savoir m'adapter rapidement aux technologies proposées.<br>
-            J'ai par ailleurs su développer une capacité de tavail d'équipe et notamment en utilisant et en comprenant le fonctionnement
-            de logiciel comme github.
+            Par mon cursus, j'ai acquis des compétences dans tous les aspects du développement web :<br>
+            Front-End / Back-End / Serveur / Sécurité / etc..<br>
+            J'ai par ailleurs développé des qualités importantes en tant que développeur :<br>
+            <ul>
+                <li>Travail d'équipe à l'aide du logiciel de gestion de version Git.</li>
+                <li>Autonomie dans l'apprentissage</li>
+            </ul>
           </p>
           <b-row class="my-5 btns">
             <b-col md="4">
               <b-button href="#contact" class="p-3 btn-contact">ME CONTACTER</b-button>
             </b-col>
-            <b-col>
+            <!-- <b-col>
               <a href="" download>
                 <b-button class="p-3 btn-pdf">TELECHARGER MON CV</b-button>
               </a>
-            </b-col>
+            </b-col> -->
           </b-row>
         </b-col>
         <b-col>
