@@ -22,7 +22,7 @@
             <b-nav-item href="#skills" class="nav-text nav-text-left">Compétences</b-nav-item>
           </b-navbar-nav>
           <b-navbar-nav class="ml-auto">
-            <b-nav-item href="#homeHero" class="mx-auto nav-text">
+            <b-nav-item href="https://www.linkedin.com/in/lucas-lensi-2a7435172/" class="mx-auto nav-text">
               <!-- <img class="round-img-nav" src="../assets/images/profile-square.jpg"> -->
               Lucas Lensi
             </b-nav-item>
@@ -75,6 +75,7 @@
           </b-row>
         </b-col>
         <b-col>
+          <a href="https://www.linkedin.com/in/lucas-lensi-2a7435172/">
           <div class="card mx-auto" style="width: 18rem;">
             <img class="card-img-top img-cut" :src="require('../assets/images/cv-photo-square.jpg')">
             <div class="card-body">
@@ -86,6 +87,7 @@
               <p class="card-text my-0"><B>Permis :</B> Permis B (véhiculé)</p>
             </div>
           </div>
+          </a>
         </b-col>
       </b-row>
     </b-container>

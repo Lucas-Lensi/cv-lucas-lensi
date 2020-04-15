@@ -2,6 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../components/Home.vue'
 import NotFound from '../components/404.vue'
+// import Portfolio from '../components/Portfolio.vue'
+// import Snake from '../components/Snake.vue'
 
 Vue.use(VueRouter)
 
@@ -11,6 +13,16 @@ const routes = [
     name: 'home',
     component: Home
   },
+  // {
+  //   path: '/portfolio',
+  //   name: 'portfolio',
+  //   component: Portfolio
+  // },
+  // {
+  //   path: '/snake',
+  //   name: 'snake',
+  //   component: Snake
+  // },
   {
     path: '*',
     name: 404,

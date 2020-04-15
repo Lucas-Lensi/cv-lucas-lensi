@@ -1,0 +1,131 @@
+.pf-title {
+  color: white;
+  font-size: 4rem;
+  width: 100%;
+  text-align:center;
+  margin-bottom: 5%;
+}
+
+.pf-background {
+  background-color: black;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+}
+
+/* .pf-background-show-items {
+  animation: toCorner 5s ease 0s;
+}
+
+@keyframes toCorner {
+  from {justify-content: center;}
+  to {justify-content: flex-start !important;}
+} */
+
+.pf-container {
+  display: flex;
+  justify-content: space-evenly;
+  animation: toLeft 2s ease 2s;
+}
+
+.pf-container-show-items-sites {
+  /* justify-content: flex-start !important; */
+  padding-top: 5%;
+  padding-left: 5%;
+}
+
+@keyframes toLeft {
+  from {justify-content: space-evenly;}
+  to {justify-content: flex-start !important;}
+}
+
+.pf-container-show-items-tech {
+  /* justify-content: flex-end !important; */
+  padding-top: 5%;
+  padding-right: 5%;
+}
+
+.pf-card {
+  height: 300px;
+  width: 250px;
+  background-color: black;
+  border-radius: 15px;
+  border: 4px solid white;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.pf-list {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
+}
+
+.pf-list-site {
+  margin-right: 5%;
+}
+
+.pf-list-tech {
+  margin-left: 5%;
+}
+
+.pf-card-at-click {
+  justify-content: flex-start !important;
+}
+
+.icons {
+  color: white;
+}
+
+.pf-card-title {
+  color: white;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.pf-card:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+.pf-card:hover .icons{
+  color: black;
+}
+
+.pf-card:hover .pf-card-title{
+  color: black;
+}
+
+/* .pf-card-site {
+  animation: slideFromLeft 1s ease 0.5s;
+}
+
+@keyframes slideFromLeft {
+  from {margin-right: 200px;}
+  to {margin-right: 0;}
+} */
+
+.hide-element {
+  display: none;
+}
+
+.pf-seperate-border-sites {
+  background-color: white;
+  width: 0;
+  height: 3px;
+  margin-left: 5%;
+  margin-right: 5%;
+  animation: slide 1s ease 0.5s forwards;
+}
+
+@keyframes slide {
+  from {width: 0;}
+  to {width: 85vh;}
+}
